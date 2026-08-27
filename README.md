@@ -46,7 +46,7 @@ Como Executar o Fluxograma
 2. Clone este repositório:
    ```bash
    https://github.com/Snow-in/Projeto_de_AePC.git
-3. ​Abra o arquivo .fprg(calculadora.fprg) no Flowgorithm e clique em Executar (F5). 
+3. ​Abra o arquivo .fprg(Calculadora_flowgorithm.fprg) no Flowgorithm e clique em Executar (F5). 
 
 
 
