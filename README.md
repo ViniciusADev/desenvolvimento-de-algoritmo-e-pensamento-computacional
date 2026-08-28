@@ -50,7 +50,7 @@ A calculadora suporta as seguintes cálculos modularizados:
 
 #### Ou 
 
-1. Clique no botão verde no canto inferior direito, escrito `Code<>`. 
+1. Clique no botão verde no canto inferior direito, escrito `<> Code`. 
 
 2. Baixe o arquivo em formato .zip 
 
