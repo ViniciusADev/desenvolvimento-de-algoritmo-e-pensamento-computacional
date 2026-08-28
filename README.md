@@ -26,7 +26,7 @@ Para evitar problemas com  renderização gráfica e lag na interface do Flowgor
 ---
 
 
-Funcionalidades Integradas (20 Operações) 
+### Funcionalidades Integradas (20 Operações) 
 
 A calculadora suporta as seguintes cálculos modularizados: 
 
@@ -40,13 +40,26 @@ A calculadora suporta as seguintes cálculos modularizados:
 
 ---
 
-Como Executar o Fluxograma 
+### Como Executar o Fluxograma 
 
 1. Baixe e instale o [Flowgorithm](http://www.flowgorithm.org/).
 2. Clone este repositório:
    ```bash
    https://github.com/Snow-in/Projeto_de_AePC.git
-3. ​Abra o arquivo .fprg(Calculadora_flowgorithm.fprg) no Flowgorithm e clique em Executar (F5). 
+3. ​Abra o arquivo .fprg(Calculadora_flowgorithm.fprg) no Flowgorithm e clique em Executar (F5).
+
+#### Ou 
+
+1. Clique no botão verde no canto inferior direito, escrito `Code<>`. 
+
+2. Baixe o arquivo em formato .zip 
+
+3. Após isso, no seu gerenciador de arquivos, extraia o arquivo em algum local. (Recomendação: Área de trabalho) 
+
+4. Após isso instale ou abra o Flowgorithm e clique em abri arquivo (Calculadora_Flowgorithm.fprg) no programa. 
+
+5. Após isso execute o programa (F5).
+
 
 
 
