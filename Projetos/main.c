@@ -20,11 +20,14 @@ double lerEntrada_double(const char* mensagem) { // Função para o tratamento d
         
 int lerEntrada_int(const char* mensagem) { // Função para o tratamento de entradas do tipo int (inteiro)
     int valor;
+	
     while (1) {
         printf("%s", mensagem);
+		
         if (scanf("%d", &valor) == 1) return valor; 
         
         printf("Error: Entrada invalida! Por favor, digite um número inteiro valido.\n");
+		
         int c;
         while ((c = getchar()) != '\n' && c != EOF);
     }
@@ -32,8 +35,10 @@ int lerEntrada_int(const char* mensagem) { // Função para o tratamento de entr
 
 long long lerEntrada_longlong(const char* mensagem) { // Função para o tratamento de entradas do tipo long long(valores grandes)
     long long valor;
+	
     while (1) {
         printf("%s", mensagem);
+		
         if (scanf("%lld", &valor) == 1) return valor; 
         
         printf("Erro: Entrada invalida! Por favor, digite um número inteiro valido.\n");
@@ -110,7 +115,7 @@ int main() {
 			double n2 = lerEntrada_double("Digite o valor do expoente: ");
 			
 			double potencia = pow(n1,n2);
-			printf("%lf ^ %lf = %lf", n1, n2, potencia);
+			printf("%.2lf ^ %.2lf = %.2lf", n1, n2, potencia);
 
 		}
 
@@ -121,30 +126,83 @@ int main() {
 			}
 			else{
 			double raiz_quadrada = sqrt(n1);
-			printf("A raiz quadrada de %.2lf e %.2lf", n1,  raiz_quadrada);
+			printf("A raiz quadrada de %.2lf é %.2lf", n1,  raiz_quadrada);
 			}
 		}
 
-		else if(op == 7) {
+		else if(op == 7) { // fatorial 
 
 		}
 
 		else if(op == 8) {
-
+            double n1 = lerEntrada_double("Digite o valor da base: ");
+			
+        	double raiz_cubica = cbrt(n1);
+			printf("A raiz cúbica de %.2lf é %.2lf", n1,  raiz_cubica);
 		}
 
 		else if(op == 9) {
+           double n1 = lerEntrada_double("Digite um número: ");
+           if (n1 < 0){
+               printf("Error: Digite um valor maior que zero!");
+           }
+           else{
+               double log_10 = log10(n1);
+               printf("O log10 de %.2lf é %.2lf", n1, log_10);
+           }
+		}
+
+		else if(op == 10) { // Seno
 
 		}
 
-		else if(op == 10) {
+		else if(op == 11) { // Cosseno
 
 		}
-
-		else if(op == 11) {
-
+		
+		else if(op == 12){ // Tangente
+		    
 		}
-
+		
+		else if(op == 13){
+		    double n1 = lerEntrada_double("Digite um valor: ");
+		    
+		    double abaixo = floor(n1);
+		    double acima = ceil(n1);
+		    
+		    printf("O arredondamento de %.2lf: \n- Abaixo: %.2lf \n- Acima: %.2lf", n1, abaixo, acima);
+		}
+		
+        else if(op == 14){ // MMC
+            
+        }
+        
+        else if(op == 15){ // MDC
+            
+        }
+        
+        else if(op == 16){ // Porcentagem
+            
+        }
+        
+        else if(op == 17){ // Conversor de ângulos 
+            
+        }
+        
+        else if(op == 18){ // Contante de PI
+            
+        }
+        
+        else if(op == 19){ // Constante de Euler
+            
+        }
+        
+        else if(op == 20){ //  
+            double n1 = lerEntrada_double("Digite um valor: ");
+            
+            double valor_absoluto = fabs(n1);
+            printf("O valor absoluto de %.2lf é %.2lf", n1, valor_absoluto);
+        }
 		else {
 			printf("Digite uma opção valida, por favor!");
 		}
