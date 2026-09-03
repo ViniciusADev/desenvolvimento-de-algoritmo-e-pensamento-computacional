@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <math.h>
 
+#ifndef const_PI
+#define const_PI 3.14159265358979323846
+#endif
+
+#ifndef const_E
+#define const_E 2.71828182845904523536
+#endif
+
+
+
+
+
+
 double lerEntrada_double(const char* mensagem) { // Função para o tratamento de entradas do tipo double (float)
    double valor;
     
@@ -130,9 +143,22 @@ int main() {
 			}
 		}
 
-		else if(op == 7) { // fatorial 
-
-		}
+		else if(op == 7) { 
+		    int i = 0;
+		    long long fatorial = 1;
+		    
+            long long n1 = lerEntrada_longlong("Digite um número: ");
+            
+            if (n1 < 0) {
+                printf("Error: Fatorial não aceita números negativos\n");
+            } 
+            else {
+              for (i = 1; i <= n1; i++) {
+                    fatorial = fatorial * i;
+                }
+                printf("%lld! = %lld\n", n1, fatorial);
+	    	}
+		}	
 
 		else if(op == 8) {
             double n1 = lerEntrada_double("Digite o valor da base: ");
@@ -144,23 +170,40 @@ int main() {
 		else if(op == 9) {
            double n1 = lerEntrada_double("Digite um número: ");
            if (n1 < 0){
-               printf("Error: Digite um valor maior que zero!");
+               printf("Error: Digite um valor maior que zero!\n");
            }
            else{
                double log_10 = log10(n1);
-               printf("O log10 de %.2lf é %.2lf", n1, log_10);
+               printf("O log10 de %.2lf é %.2lf\n", n1, log_10);
            }
 		}
 
-		else if(op == 10) { // Seno
-
+		else if(op == 10) { 
+            double grau = lerEntrada_double("Digite o ângulo em graus: ");
+            
+            double rad = grau * (const_PI / 180.0);
+            double seno = sin(rad);
+            
+            printf("Seno(%.2lf°) = %.4lf\n", grau, seno);
 		}
 
-		else if(op == 11) { // Cosseno
+		else if(op == 11) { 
+		    double grau = lerEntrada_double("Digite o ângulo em graus: ");
+		    
+            double rad = grau * (M_PI / 180.0);
+            double cosseno = cos(rad);
+            
+            printf("Cosseno(%.2lf°) = %.4lf\n", grau, cosseno);
 
 		}
 		
-		else if(op == 12){ // Tangente
+		else if(op == 12){ 
+		    double grau = lerEntrada_double("Digite o ângulo em graus: ");
+		    
+            double rad = grau * (M_PI / 180.0);
+            double tangente = tan(rad);
+            
+            printf("Tangente(%.2lf°) = %.4lf\n", grau, tangente);
 		    
 		}
 		
@@ -181,23 +224,54 @@ int main() {
             
         }
         
-        else if(op == 16){ // Porcentagem
+        else if(op == 16){ 
+            double porcentagem = lerEntrada_double("Digite a porcentagem (%): "); 
+            
+            double total = lerEntrada_double("Digite o valor total: ");
+            
+            double resultado = (porcentagem / 100.0) * total;
+            
+            printf("%.2lf%% de %.2lf = %.2lf\n", porcentagem, total, resultado);
             
         }
         
-        else if(op == 17){ // Conversor de ângulos 
+        else if(op == 17){ 
+            printf("1 - Graus para Radianos\n2 - Radianos para Graus\n");
+            
+            int op_Conversor = lerEntrada_int("Escolha o tipo de conversão: ");
+            
+            if (op_Conversor == 1) {
+                double grau = lerEntrada_double("Digite os graus: ");
+                
+                 double rad = grau * (M_PI / 180.0);
+                
+                printf("%.2lf° = %.4lf rad\n", grau, rad);
+            } 
+				
+            else if (op_Conversor == 2) {
+                double rad = lerEntrada_double("Digite os radianos: ");
+                
+                double grau = rad * (180.0 / M_PI);
+                
+                printf("%.4lf rad = %.2lf°\n", rad, grau);
+            } 
+				
+            else {
+                printf("Error: Opção de conversão inválida!\n");
+            }
+            
+        }
+			
+        else if(op == 18){ 
+            printf("Constante PI (π) = %.15lf\n", M_PI);
+        }
+        
+        else if(op == 19){ 
+            printf("Constante de Euler (e) = %.15lf\n", M_E);
             
         }
         
-        else if(op == 18){ // Contante de PI
-            
-        }
-        
-        else if(op == 19){ // Constante de Euler
-            
-        }
-        
-        else if(op == 20){ //  
+        else if(op == 20){   
             double n1 = lerEntrada_double("Digite um valor: ");
             
             double valor_absoluto = fabs(n1);
@@ -209,5 +283,3 @@ int main() {
 	}
     return 0;
 }
-
-
