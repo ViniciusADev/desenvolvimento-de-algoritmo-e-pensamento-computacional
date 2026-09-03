@@ -1,4 +1,4 @@
-# Calculadora Científica em Flowgorithm e C 
+> # Calculadora Científica em Flowgorithm e C 
 
 Projeto desenvolvido como parte da disciplina de Pensamentos e Algoritmos Computacionais . A aplicação consiste em uma calculadora com 20 operações matemáticas, feita no Flowgorithm antes da sua implementação para a  linguagem C.
 
@@ -61,11 +61,10 @@ A calculadora suporta as seguintes cálculos modularizados:
 5. Após isso execute o programa (F5).
    
 ---
----
 
-# Arquitetura & Implementação  (Linguagem C) 
+> # Arquitetura & Implementação  (Linguagem C) 
 
-Para garantir a funcionalidade e precisão matemática no código em C, o projeto foi estruturado com foco em **validação de entrada de dados **, **prevenção de memória** e **controle de fluxo**.
+Para garantir a funcionalidade e precisão matemática no código em C, o projeto foi estruturado com foco em **validação de entrada de dados**, **prevenção de memória** e **controle de fluxo**.
 
 ---
 
@@ -105,11 +104,11 @@ O sistema suporta as seguintes cálculos:
 
 ### Ou
 
-1. Copie o código do arquivo `main.c`
-2. Abra um compilador de c online: [OnlineGDB](https://www.onlinegdb.com/online_c_compiler)
-3. Apague todo o código inicial
-4. Cole o código do `main.c`
-5. Execute o programa apertando F9
+1. Copie o código do arquivo `main.c`.
+2. Abra um compilador de c online [OnlineGDB](https://www.onlinegdb.com/online_c_compiler)
+3. Apague todo o código inicial.
+4. Cole o código do `main.c`.
+5. Execute o programa apertando F9.
 
 
 
