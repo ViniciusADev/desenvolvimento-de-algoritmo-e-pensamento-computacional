@@ -41,7 +41,7 @@ int lerEntrada_int(const char* mensagem) { // Função para o tratamento de entr
     }
 };
 
-long long lerEntrada_longlong(const char* mensagem) { // Função para o tratamento de entradas do tipo long long(valores grandes)
+long long lerEntrada_longlong(const char* mensagem) { // Função para o tratamento de entradas do tipo long long (valores grandes)
     long long valor;
 	
     while (1) {
