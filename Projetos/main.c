@@ -303,11 +303,11 @@ int main() {
         }
         
         else if(op == 18){ 
-            printf("Constante PI (π) = %.15lf\n", M_PI);
+            printf("Constante PI (π) = %.15lf\n", const_PI);
         }
         
         else if(op == 19){ 
-            printf("Constante de Euler (e) = %.15lf\n", M_E);
+            printf("Constante de Euler (e) = %.15lf\n", const_E);
             
         }
         
