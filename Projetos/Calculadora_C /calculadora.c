@@ -3,11 +3,11 @@
 
 // definem uma constante
 #ifndef const_PI                         
-#define const_PI 3.14159265358979323846  // Define um costante 
+#define const_PI 3.14159265358979323846  
 #endif
 
 #ifndef const_E
-#define const_E 2.71828182845904523536 // Define uma constante
+#define const_E 2.71828182845904523536 
 #endif
 
 double lerEntrada_double(const char* mensagem) { // Função para o tratamento de entradas do tipo double (float)
