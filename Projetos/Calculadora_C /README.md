@@ -26,7 +26,30 @@ Para garantir a **estabilidade e precisão**, o código conta com:
 
 O programa oferece suporte a 20 operações e constantes matemáticas organizadas a seguir:
 
---- Tabela ---
+| Nº | Função / Operação | Descrição |
+| :-: | :--- | :--- |
+| **01** | **Soma** | Adição entre dois números reais |
+| **02** | **Subtração** | Subtração entre dois números reais |
+| **03** | **Multiplicação** | Multiplicação entre dois números reais |
+| **04** | **Divisão** | Divisão de dois números com tratamento contra divisão por zero |
+| **05** | **Potenciação** | Eleva uma base $B$ a um expoente $e$ ($B^e$) |
+| **06** | **Raiz Quadrada** | Calcula $\sqrt{x}$ (com validação para radicais não negativos) |
+| **07** | **Fatorial** | Cálculo do fatorial ($x!$) para inteiros positivos |
+| **08** | **Raiz Cúbica** | Calcula $\sqrt[3]{x}$ |
+| **09** | **Logaritmo** | Logaritmo na base 10 ($\log_{10}$) |
+| **10** | **Seno** | Cálculo do seno ($\sin$) de um ângulo |
+| **11** | **Cosseno** | Cálculo do cosseno ($\cos$) de um ângulo |
+| **12** | **Tangente** | Cálculo da tangente ($\tan$) de um ângulo |
+| **13** | **Arredondamento** | Arredondamento de números reais |
+| **14** | **MMC** | Mínimo Múltiplo Comum entre dois números inteiros |
+| **15** | **MDC** | Máximo Divisor Comum entre dois números inteiro |
+| **16** | **Porcentagem** | Cálculo de porcentagens simples (%) |
+| **17** | **Conversão Rad/Grau** | Converte ângulos de Radianos para Graus e vice-versa |
+| **18** | **Constante PI** | Mostra a constante de PI |
+| **19** | **Constante Euler** | Mostra a constante de Euler  |
+| **20** | **Absoluto (Abs)** | Retorna o valor em módulo ou seja positivo |
+
+---
 
 ### Como Compilar e Executar o Código em C
 
