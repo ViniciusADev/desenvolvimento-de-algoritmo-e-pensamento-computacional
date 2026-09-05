@@ -2,12 +2,12 @@
 #include <math.h>
 
 // definem uma constante
-#ifndef const_PI                        
-#define const_PI 3.14159265358979323846 
+#ifndef const_PI                         
+#define const_PI 3.14159265358979323846  // Define um costante 
 #endif
 
 #ifndef const_E
-#define const_E 2.71828182845904523536 
+#define const_E 2.71828182845904523536 // Define uma constante
 #endif
 
 double lerEntrada_double(const char* mensagem) { // Função para o tratamento de entradas do tipo double (float)
@@ -244,7 +244,7 @@ void porcentagem() {
     printf("%.2lf%% de %.2lf = %.2lf\n", porcentagem, total, resultado);
 }
 
-void angulos() {
+void conversor_de_angulos() {
     printf("1 - Graus para Radianos\n2 - Radianos para Graus\n");
             
     int op_Conversor = lerEntrada_int("Escolha o tipo de conversão: ");
@@ -321,7 +321,7 @@ int main() {
         else if (op == 14) mmc();
         else if (op == 15) mdc();
         else if (op == 16) porcentagem();
-        else if (op == 17) angulos();
+        else if (op == 17) conversor_de_angulos();
         else if (op == 18) constante_pi();
         else if (op == 19) constante_euler();
         else if (op == 20) valor_absoluto();
