@@ -19,16 +19,16 @@ Cada pasta possui seu próprio arquivo `README.md` detalhado com a documentaçã
 ```text
 desenvolvimento-de-algoritmo-e-pensamento-computacional/
 ├── README.md
-├── 📂 Projetos                          <- (Este arquivo principal de navegação)
+├── 📂 Projetos                          <- (Esta e a pasta principal de navegação)
 │
-├── 📂 01_Calculadora_Flowgorithm/       <- Projeto da Calculadora no Flowgorithm (.fprg)
+├── 📂 01_Calculadora_flowgorithm/       <- Projeto da Calculadora no Flowgorithm (.fprg)
 │   ├── README.md
 │   └── calculadora_flowgorithm.fprg
 │
-├── 📂 02_                <- Implementação da Calculadora na Linguagem C (.c)
+├── 📂 02_Calculadora_C                  <- Implementação da Calculadora na Linguagem C (.c)
 │   ├── README.md
-│   └── main.c
+│   └── calculadora.c
 │
 └── 📂 03_                <- Conversor de Temperatura na Linguagem C (.c)
     ├── README.md
-    └── main.c
+    └── .c
