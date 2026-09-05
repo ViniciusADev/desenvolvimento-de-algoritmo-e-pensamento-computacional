@@ -75,7 +75,7 @@ Em conformidade com os requisitos da atividade, as funções **18** e **19** cob
 1. Baixe e instale o [Flowgorithm](http://www.flowgorithm.org/).
 2. Clone este repositório ou baixe os arquivos:
    ```bash
-   git clone https://github.com/Snow-in/desenvolvimento-de-algoritmo-e-pensamento-computacional.git
+   git clone https://github.com/ViniciusADev/desenvolvimento-de-algoritmo-e-pensamento-computacional.git
 3. ​Abra o arquivo .fprg(calculadora_flowgorithm.fprg) no Flowgorithm e clique em Executar (F5).
 
 #### Ou 
