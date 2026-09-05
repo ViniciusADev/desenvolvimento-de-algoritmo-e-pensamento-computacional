@@ -1,7 +1,7 @@
 # Projeto Prático: Calculadora Científica em Flowgorithm
 
 **Aluno:** Vinícius Alves  
-**Disciplina:** Algoritmo e pensamento computacional
+**Disciplina:** Algoritmos e pensamento computacional
 
 ---
 
@@ -31,9 +31,32 @@ A calculadora atua com uma interface de terminal do flowgorithm via menu interat
 
 Abaixo está a relação completa de todas as rotas e funções:
 
----Tabela---
+| Nº | Função / Operação | Descrição |
+| :-: | :--- | :--- |
+| **01** | **Soma** | Adição entre dois números reais |
+| **02** | **Subtração** | Subtração entre dois números reais |
+| **03** | **Multiplicação** | Multiplicação entre dois números reais |
+| **04** | **Divisão** | Divisão de dois números com tratamento contra divisão por zero |
+| **05** | **Potenciação** | Eleva uma base $B$ a um expoente $e$ ($B^e$) |
+| **06** | **Raiz Quadrada** | Calcula $\sqrt{x}$ (com validação para radicais não negativos) |
+| **07** | **Fatorial** | Cálculo do fatorial ($x!$) para inteiros positivos |
+| **08** | **Raiz Cúbica** | Calcula $\sqrt[3]{x}$ |
+| **09** | **Logaritmo** | Logaritmo na base 10 ($\log_{10}$) |
+| **10** | **Seno** | Cálculo do seno ($\sin$) de um ângulo |
+| **11** | **Cosseno** | Cálculo do cosseno ($\cos$) de um ângulo |
+| **12** | **Tangente** | Cálculo da tangente ($\tan$) de um ângulo |
+| **13** | **Arredondamento** | Arredondamento de números reais |
+| **14** | **MMC** | Mínimo Múltiplo Comum entre dois números inteiros |
+| **15** | **MDC** | Máximo Divisor Comum entre dois números inteiro |
+| **16** | **Porcentagem** | Cálculo de porcentagens simples (%) |
+| **17** | **Conversão Rad/Grau** | Converte ângulos de Radianos para Graus e vice-versa |
+| **18** | **IMC** | Cálculo do Índice de Massa Corporal com validação de altura |
+| **19** | **Área Geométrica** | Cálculo de área de Retângulos, Triângulos e Círculos |
+| **20** | **Absoluto (Abs)** | Retorna o valor em módulo ou seja positivo |
 
-## Funções Obrigatórias em Destaque
+---
+
+## Funções Obrigatórias
 
 Em conformidade com os requisitos da atividade, as funções **18** e **19** cobrem regras de negócio e validações específicas:
 
@@ -41,9 +64,9 @@ Em conformidade com os requisitos da atividade, as funções **18** e **19** cob
   $$\text{IMC} = \frac{\text{Peso}}{\text{Altura}^2}$$
 
 *  **`AreaGeometrica` (Opção 19):** Submenu interativo que permite escolher a figura geométrica desejada para cálculo da área:
-  * **Retângulo:** $A = \text{base} \times \text{altura}$
-  * **Triângulo:** $A = \frac{\text{base} \times \text{altura}}{2}$
-  * **Círculo:** $A = \pi \times \text{raio}^2$
+  1. **Retângulo:** $A = \text{base} \times \text{altura}$
+  2. **Triângulo:** $A = \frac{\text{base} \times \text{altura}}{2}$
+  3. **Círculo:** $A = \pi \times \text{raio}^2$
 
 ---
 
