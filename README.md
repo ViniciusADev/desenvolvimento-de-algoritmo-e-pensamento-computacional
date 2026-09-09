@@ -29,6 +29,6 @@ desenvolvimento-de-algoritmo-e-pensamento-computacional/
 │   ├── README.md
 │   └── calculadora.c
 │
-└── 📂 03_                <- Conversor de Temperatura na Linguagem C (.c)
+└── 📂 03_ Em desenvolvimento...         <- Conversor de Temperatura na Linguagem C (.c)
     ├── README.md
-    └── .c
+    └── main.c
