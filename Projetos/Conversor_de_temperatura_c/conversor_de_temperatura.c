@@ -30,7 +30,7 @@ void celsius_para_fahrenheit() {
        
     double fahrenheit = (C * 9.0/5.0) + 32.0;
             
-    printf("°%.2lf C = %.2lf F", C, fahrenheit);
+    printf("°%.2lf °C = %.2lf °F", C, fahrenheit);
 }
 
 void celsius_para_kelvin() {
@@ -38,7 +38,7 @@ void celsius_para_kelvin() {
     
     double kelvin = C + 273.15;
             
-    printf("%.2lf C = %.2lf K", C, kelvin);
+    printf("%.2lf °C = %.2lf K", C, kelvin);
 }
 
 void fahrenheit_para_celsius() {
@@ -46,7 +46,7 @@ void fahrenheit_para_celsius() {
     
     double celsius = (F - 32.0) * 5.0/9.0;
             
-    printf("%.2lf F = %.2lf C", F, celsius); 
+    printf("%.2lf °F = %.2lf °C", F, celsius); 
 }
 
 void fahrenheit_para_kelvin() {
@@ -54,7 +54,7 @@ void fahrenheit_para_kelvin() {
     
     double kelvin = (F - 32.0) * 5.0/9.0 + 273.15;
             
-    printf("%.2lf F = %.2lf K", F, kelvin); 
+    printf("%.2lf °F = %.2lf K", F, kelvin); 
 }
 
 void kelvin_para_celsius() {
@@ -62,7 +62,7 @@ void kelvin_para_celsius() {
     
     double celsius = K - 273.15;
             
-    printf("%.2lf K = %.2lf C", K, celsius);
+    printf("%.2lf K = %.2lf °C", K, celsius);
 }
 
 void kelvin_para_fahrenheit() {
@@ -70,7 +70,7 @@ void kelvin_para_fahrenheit() {
      
     double fahrenheit = (K - 273.15) * 9.0/5.0 + 32.0;
             
-    printf("%.2lf K = %.2lf F", K, fahrenheit);
+    printf("%.2lf K = %.2lf °F", K, fahrenheit);
 }
 
 int main()
@@ -85,7 +85,7 @@ int main()
            
     int op;  
     
-    op = lerEntrada_int("\nDigite uma opção(0 para sair): ");
+    op = lerEntrada_int("\nDigite uma opção (0 para sair): ");
     switch (op){
         case 0:
            printf("\nSaindo...");
