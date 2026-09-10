@@ -1,63 +1,76 @@
 #include <stdio.h>
 
+
+double lerEntrada_double(const char* mensagem) { // Função para o tratamento de entradas do tipo double (float)
+    double valor;
+    while (1) {
+        printf("%s", mensagem);
+        if (scanf("%lf", &valor) == 1) {
+            return valor;
+        }
+        printf("Error: Entrada invalida! Por favor, digite um número real valido.\n");
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
+    }
+}
+
+int lerEntrada_int(const char* mensagem) { // Função para o tratamento de entradas do tipo int (inteiro)
+    int valor;
+    while (1) {
+        printf("%s", mensagem);
+        if (scanf("%d", &valor) == 1) return valor;
+        printf("Error: Entrada invalida! Por favor, digite um número inteiro valido.\n");
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
+    }
+}
+
 void celsius_para_fahrenheit() {
-    double C = 0;
-    printf("\n Digite o valor em Celsius: ");
-    scanf("%lf", &C);
-            
+    double C = lerEntrada_double("\nDigite o valor em Celsius: ");
+       
     double fahrenheit = (C * 9.0/5.0) + 32.0;
             
     printf("°%.2lf C = %.2lf F", C, fahrenheit);
 }
 
 void celsius_para_kelvin() {
-    double C = 0;
-    printf("\nDigite o valor em Celsius: ");
-            scanf("%lf", &C);
-            
+    double C = lerEntrada_double("\nDigite o valor em Celsius: "); 
+    
     double kelvin = C + 273.15;
             
     printf("%.2lf C = %.2lf K", C, kelvin);
 }
 
 void fahrenheit_para_celsius() {
-    double F = 0;
-    printf("\nDigite o valor em Fahrenheit: ");
-    scanf("%lf", &F);
-            
+    double F = lerEntrada_double("\nDigite o valor em Fahrenheit: ");
+    
     double celsius = (F - 32.0) * 5.0/9.0;
             
     printf("%.2lf F = %.2lf C", F, celsius); 
 }
 
 void fahrenheit_para_kelvin() {
-    double F = 0;
-    printf("\nDigite o valor em Fahrenheit: ");
-    scanf("%lf", &F);
-            
-    double kelvin = (F - 32.0) * 5/9 + 273.15;
+    double F = lerEntrada_double("\nDigite o valor em Fahrenheit: "); 
+    
+    double kelvin = (F - 32.0) * 5.0/9.0 + 273.15;
             
     printf("%.2lf F = %.2lf K", F, kelvin); 
 }
 
 void kelvin_para_celsius() {
-    double K = 0;
-    printf("\nDigite o valor em Kelvin: ");
-    scanf("%lf", &K);
-            
+    double K = lerEntrada_double("\nDigite o valor em Kelvin: "); 
+    
     double celsius = K - 273.15;
             
-    printf("°%.2lf K = %.2lf C", K, celsius);
+    printf("%.2lf K = %.2lf C", K, celsius);
 }
 
 void kelvin_para_fahrenheit() {
-    double K = 0;
-    printf("\nDigite o valor em Kelvin: ");
-    scanf("%lf", &K);
-            
+    double K = lerEntrada_double("\nDigite o valor em Kelvin: ");
+     
     double fahrenheit = (K - 273.15) * 9.0/5.0 + 32.0;
             
-    printf("°%.2lf K = %.2lf F", K, fahrenheit);
+    printf("%.2lf K = %.2lf F", K, fahrenheit);
 }
 
 int main()
@@ -72,9 +85,7 @@ int main()
            
     int op;  
     
-    printf("\nDigite uma opção: ");
-    scanf("%d", &op);
-   
+    op = lerEntrada_int("\nDigite uma opção(0 para sair): ");
     switch (op){
         case 0:
            printf("\nSaindo...");
