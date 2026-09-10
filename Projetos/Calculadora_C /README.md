@@ -53,7 +53,7 @@ O programa oferece suporte a 20 operações e constantes matemáticas organizada
 
 ### Como Compilar e Executar o Código em C
 
-> Nota: Essa mátodo só funciona no Windows
+> Nota: Este método só funciona no Windows
  
 1. Certifique-se de ter um compilador C instalado (como o **GCC**).
 2. Abra o terminal na pasta onde o arquivo `calculadora.c` está localizado.
