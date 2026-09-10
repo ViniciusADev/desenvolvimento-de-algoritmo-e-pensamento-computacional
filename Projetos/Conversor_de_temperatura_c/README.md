@@ -26,10 +26,35 @@ Para garantir a **estabilidade, precisão e modularidade**, o código conta com:
 
 O programa oferece suporte a 6 operações de conversão entre escalas termométricas:
 
-Tabela
+| Nº | Conversão | Função Implementada | Fórmula Utilizada |
+| :-: | :--- | :--- | :--- |
+| **01** | **Celsius $\rightarrow$ Fahrenheit** | `celsius_para_fahrenheit()` | $F = (C \times \frac{9}{5}) + 32$ |
+| **02** | **Celsius $\rightarrow$ Kelvin** | `celsius_para_kelvin()` | $K = C + 273.15$ |
+| **03** | **Fahrenheit $\rightarrow$ Celsius** | `fahrenheit_para_celsius()` | $C = (F - 32) \times \frac{5}{9}$ |
+| **04** | **Fahrenheit $\rightarrow$ Kelvin** | `fahrenheit_para_kelvin()` | $K = (F - 32) \times \frac{5}{9} + 273.15$ |
+| **05** | **Kelvin $\rightarrow$ Celsius** | `kelvin_para_celsius()` | $C = K - 273.15$ |
+| **06** | **Kelvin $\rightarrow$ Fahrenheit** | `kelvin_para_fahrenheit()` | $F = (K - 273.15) \times \frac{9}{5} + 32$ |
+
 ---
 
 ### Como Compilar e Executar o Código em C
 
+> Nota: Este método só funciona no Windows
+ 
+1. Certifique-se de ter um compilador C instalado (como o **GCC**).
+2. Abra o terminal na pasta onde o arquivo `conversor_de_temperatura.c` está localizado.
+3. Compile o arquivo incluindo a biblioteca matemática (`-lm`):
+   ```bash
+   gcc -Wall -Wextra conversor_de_temperatura.c -o conversor_de_temperatura
+4. Execute  arquivo gerado `conversor_de_temperatura.exe`
+ 
 
+### Ou
+
+
+1. Copie o código do arquivo `conversor_de_temperatura.c`.
+2. Abra um compilador de c online [OnlineGDB](https://www.onlinegdb.com/online_c_compiler)
+3. Apague todo o código inicial.
+4. Cole o código do `conversor_de_temperatura.c`.
+5. Execute o programa apertando F9. 
 
