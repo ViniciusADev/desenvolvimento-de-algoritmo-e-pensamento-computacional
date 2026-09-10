@@ -67,5 +67,5 @@ O programa oferece suporte a 20 operações e constantes matemáticas organizada
 1. Copie o código do arquivo `calculadora.c`.
 2. Abra um compilador de c online [OnlineGDB](https://www.onlinegdb.com/online_c_compiler)
 3. Apague todo o código inicial.
-4. Cole o código do `main.c`.
+4. Cole o código do `calculadora.c`.
 5. Execute o programa apertando F9. 
